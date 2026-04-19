@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEFA GYM | مكملات رياضية</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#products">تخطي إلى المنتجات</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="TEFA GYM">
+          <img class="brand-logo" src="assets/tefa-logo.png" alt="TEFA GYM logo" />
+          <span>
+          <strong>TEFA GYM</strong>
+            <small>Supplements Store</small>
+          </span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="#products">المنتجات</a>
+          <a href="checkout.html">Checkout</a>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="تغيير وضع الألوان" aria-pressed="false">
+            <svg class="sun" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 4V2m0 20v-2M4 12H2m20 0h-2M5.6 5.6 4.2 4.2m15.6 15.6-1.4-1.4m0-12.8 1.4-1.4M4.2 19.8l1.4-1.4M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+            </svg>
+            <svg class="moon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4a7.2 7.2 0 1 0 11.5 11.5Z" />
+            </svg>
+          </button>
+          <button class="cart-toggle" type="button" aria-label="فتح السلة">
+            <svg class="ui-icon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M6.2 6h15l-1.8 8.4a2 2 0 0 1-2 1.6H9.1a2 2 0 0 1-2-1.7L5.5 3.8H2.8" />
+              <path d="M9.5 20.2h.1M17 20.2h.1" />
+            </svg>
+            <span>السلة</span>
+            <b id="cartCount">0</b>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">مكملات أصلية لتمرين أقوى</p>
+          <h1>TEFA GYM</h1>
+          <p>
+            ستور مكملات بستايل الجيم: اختار، راجع السلة، اكتب بياناتك،
+            وابعت الأوردر واتساب برسالة كاملة في لحظة.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#products">تسوق الآن</a>
+            <button class="ghost-btn cart-toggle" type="button">راجع السلة</button>
+          </div>
+        </div>
+
+        <div class="hero-stage" aria-label="منتجات مكملات رياضية">
+          <img class="hero-logo" src="assets/tefa-logo.png" alt="TEFA GYM" />
+          <img src="assets/hero-stack.svg" alt="مجموعة مكملات TEFA GYM" />
+          <div class="hero-badge">
+            <strong>King Mode</strong>
+            <span>مكملات جاهزة للأداء</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="مميزات المتجر">
+        <div>
+          <svg class="feature-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12.5 9.2 17 19 7" /></svg>
+          <strong>دفع عند الاستلام</strong>
+          <span>داخل مصر</span>
+        </div>
+        <div>
+          <svg class="feature-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z" /><path d="M8 9h8M8 12h5" /></svg>
+          <strong>تأكيد واتساب</strong>
+          <span>فاتورة جاهزة</span>
+        </div>
+        <div>
+          <svg class="feature-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M7 20V8m10 12V8M5 8h14M4 11h3m10 0h3M9 5h6v3H9z" /></svg>
+          <strong>منتجات مختارة</strong>
+          <span>للتضخيم والتنشيف</span>
+        </div>
+      </section>
+
+      <section class="section-head" id="products">
+        <p class="eyebrow">الكتالوج</p>
+        <h2>اختار هدفك من التمرين</h2>
+        <div class="filters" role="list" aria-label="فلترة المنتجات">
+          <button class="filter active" type="button" data-filter="all">الكل</button>
+          <button class="filter" type="button" data-filter="mass">تضخيم</button>
+          <button class="filter" type="button" data-filter="cut">تنشيف</button>
+          <button class="filter" type="button" data-filter="health">صحة</button>
+          <button class="filter" type="button" data-filter="energy">طاقة</button>
+        </div>
+      </section>
+
+      <section class="catalog-tools" aria-label="بحث المنتجات">
+        <label class="search-box">
+          <svg class="ui-icon" aria-hidden="true" viewBox="0 0 24 24">
+            <path d="m21 21-4.4-4.4" />
+            <circle cx="11" cy="11" r="7" />
+          </svg>
+          <span>بحث سريع</span>
+          <input id="productSearch" type="search" placeholder="اكتب اسم المنتج أو الهدف..." autocomplete="off" />
+        </label>
+      </section>
+
+      <section class="products-grid" id="productsGrid" aria-live="polite"></section>
+
+      <section class="section-head bundles-head" id="bundles">
+        <p class="eyebrow">Bundles</p>
+        <h2>باكدجات جاهزة حسب هدفك</h2>
+      </section>
+
+      <section class="bundles-grid" id="bundlesGrid" aria-label="باكدجات TEFA GYM"></section>
+
+      <section class="checkout-promo" id="order">
+        <div>
+          <p class="eyebrow">خطوة أخيرة</p>
+          <h2>جاهز تقفل الأوردر؟</h2>
+          <p>راجع السلة في صفحة Checkout، اكتب بيانات المتابعة، واستلم من TEFA GYM داخل الوادي الجديد. منتجات الطلب المسبق يتم التواصل عند وصولها.</p>
+        </div>
+        <a class="primary-btn" href="checkout.html">افتح Checkout</a>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+      <div class="cart-backdrop cart-close"></div>
+      <div class="cart-panel" role="dialog" aria-modal="true" aria-label="سلة المشتريات">
+        <div class="cart-head">
+          <h2>سلة المشتريات</h2>
+          <button class="icon-btn cart-close" type="button" aria-label="إغلاق السلة">×</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-summary">
+          <div>
+            <span>الإجمالي</span>
+            <strong id="cartTotal">0 ج.م</strong>
+          </div>
+          <a class="primary-btn" href="checkout.html" id="checkoutLink">إتمام الأوردر</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <a class="floating-whatsapp" href="https://wa.me/201228164202" target="_blank" rel="noopener" aria-label="اسأل على واتساب">
+      <svg class="ui-icon" aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M5.5 18.5 4 22l3.8-1.3A9 9 0 1 0 3 12.7a9.2 9.2 0 0 0 2.5 5.8Z" />
+        <path d="M8.8 8.6c.2 4 2.6 6.4 6.6 6.6l1.2-1.7-2.1-1.2-.9 1c-1.6-.5-2.5-1.4-3-3l1-.9-1.2-2.1-1.6 1.3Z" />
+      </svg>
+      <span>واتساب</span>
+    </a>
+
+    <script src="product-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

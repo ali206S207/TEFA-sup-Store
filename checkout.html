@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | TEFA GYM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="checkout-page">
+    <a class="skip-link" href="#checkoutItems">تخطي إلى مراجعة السلة</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="TEFA GYM">
+          <img class="brand-logo" src="assets/tefa-logo.png" alt="TEFA GYM logo" />
+          <span>
+            <strong>TEFA GYM</strong>
+            <small>Checkout</small>
+          </span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="index.html#products">المنتجات</a>
+          <a href="index.html">الرئيسية</a>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="تغيير وضع الألوان" aria-pressed="false">
+            <svg class="sun" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 4V2m0 20v-2M4 12H2m20 0h-2M5.6 5.6 4.2 4.2m15.6 15.6-1.4-1.4m0-12.8 1.4-1.4M4.2 19.8l1.4-1.4M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+            </svg>
+            <svg class="moon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4a7.2 7.2 0 1 0 11.5 11.5Z" />
+            </svg>
+          </button>
+          <span class="checkout-count">السلة <b id="cartCount">0</b></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="checkout-hero">
+        <div>
+              <p class="eyebrow">TEFA GYM Checkout</p>
+              <h1>راجع أوردرك قبل ما يروح واتساب</h1>
+          <p>عدّل الكميات، اكتب بيانات المتابعة، والاستلام من TEFA GYM داخل الوادي الجديد فقط.</p>
+        </div>
+        <img src="assets/tefa-logo.png" alt="TEFA GYM" />
+      </section>
+
+      <section class="checkout-steps" aria-label="خطوات إتمام الأوردر">
+        <div class="step active">
+          <span>1</span>
+          <strong>السلة</strong>
+        </div>
+        <div class="step active">
+          <span>2</span>
+          <strong>البيانات</strong>
+        </div>
+        <div class="step">
+          <span>3</span>
+          <strong>واتساب</strong>
+        </div>
+      </section>
+
+      <section class="checkout-layout">
+        <div class="checkout-main">
+          <div class="checkout-block">
+            <div class="block-head">
+              <div>
+                <p class="eyebrow">مراجعة السلة</p>
+                <h2>منتجاتك</h2>
+              </div>
+              <a class="ghost-btn" href="index.html#products">إضافة منتجات</a>
+            </div>
+            <div id="checkoutItems" class="checkout-items"></div>
+          </div>
+
+          <div class="checkout-block">
+            <div class="block-head">
+              <div>
+                <p class="eyebrow">بيانات الاستلام</p>
+                <h2>بيانات المتابعة</h2>
+              </div>
+            </div>
+            <div class="pickup-note">
+              الاستلام من TEFA GYM داخل الوادي الجديد فقط. منتجات الطلب المسبق يتم تأكيدها برسالة عند وصولها.
+            </div>
+            <form class="checkout-form checkout-form-page" id="checkoutForm">
+              <label>
+                الاسم بالكامل
+                <input name="name" type="text" placeholder="مثال: أحمد محمد" required />
+              </label>
+              <label>
+                رقم الموبايل
+                <input name="phone" type="tel" placeholder="01xxxxxxxxx" required />
+              </label>
+              <label>
+                المنطقة / المدينة داخل الوادي الجديد
+                <input name="city" type="text" placeholder="مثال: الخارجة، الداخلة، باريس..." required />
+              </label>
+              <label>
+                طريقة الاستلام
+                <input name="pickup" type="text" value="استلام من TEFA GYM - الوادي الجديد" readonly />
+              </label>
+              <label>
+                ملاحظات اختيارية
+                <textarea name="notes" rows="2" placeholder="طعم معين، ميعاد مناسب، أي تفاصيل إضافية"></textarea>
+              </label>
+              <label class="remember-customer">
+                <input name="remember" type="checkbox" checked />
+                <span>احفظ بياناتي للطلبات الجاية على نفس الجهاز</span>
+              </label>
+              <button class="primary-btn submit-btn" type="submit">تحديث الفاتورة</button>
+            </form>
+          </div>
+        </div>
+
+        <aside class="checkout-summary" aria-label="ملخص الأوردر">
+          <div class="summary-card">
+            <div class="summary-logo">
+              <img src="assets/tefa-logo.png" alt="" />
+              <div>
+                <p class="eyebrow">الفاتورة</p>
+                <h2>Order Summary</h2>
+              </div>
+            </div>
+            <div id="summaryContent"></div>
+            <button class="ghost-btn invoice-pdf-btn" id="downloadInvoicePdf" type="button">تحميل الفاتورة PDF</button>
+            <button class="confirm-btn" id="confirmWhatsApp" type="button">تأكيد وإرسال على واتساب</button>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <a class="floating-whatsapp" href="https://wa.me/201228164202" target="_blank" rel="noopener" aria-label="اسأل على واتساب">
+      <svg class="ui-icon" aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M5.5 18.5 4 22l3.8-1.3A9 9 0 1 0 3 12.7a9.2 9.2 0 0 0 2.5 5.8Z" />
+        <path d="M8.8 8.6c.2 4 2.6 6.4 6.6 6.6l1.2-1.7-2.1-1.2-.9 1c-1.6-.5-2.5-1.4-3-3l1-.9-1.2-2.1-1.6 1.3Z" />
+      </svg>
+      <span>واتساب</span>
+    </a>
+
+    <script src="product-data.js"></script>
+    <script src="checkout.js"></script>
+  </body>
+</html>

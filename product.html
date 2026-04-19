@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product | TEFA GYM</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="product-page">
+    <a class="skip-link" href="#productDetail">تخطي إلى تفاصيل المنتج</a>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html" aria-label="TEFA GYM">
+          <img class="brand-logo" src="assets/tefa-logo.png" alt="TEFA GYM logo" />
+          <span>
+            <strong>TEFA GYM</strong>
+            <small>Product Details</small>
+          </span>
+        </a>
+
+        <div class="nav-actions">
+          <a href="index.html#products">المنتجات</a>
+          <a href="checkout.html">Checkout</a>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="تغيير وضع الألوان" aria-pressed="false">
+            <svg class="sun" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M12 4V2m0 20v-2M4 12H2m20 0h-2M5.6 5.6 4.2 4.2m15.6 15.6-1.4-1.4m0-12.8 1.4-1.4M4.2 19.8l1.4-1.4M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+            </svg>
+            <svg class="moon" aria-hidden="true" viewBox="0 0 24 24">
+              <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4a7.2 7.2 0 1 0 11.5 11.5Z" />
+            </svg>
+          </button>
+          <a class="checkout-count" href="checkout.html">السلة <b id="cartCount">0</b></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-detail" id="productDetail"></section>
+      <section class="section-head">
+        <p class="eyebrow">اختيارات قريبة</p>
+        <h2>منتجات ممكن تناسبك</h2>
+      </section>
+      <section class="products-grid related-grid" id="relatedGrid"></section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <a class="floating-whatsapp" href="https://wa.me/201228164202" target="_blank" rel="noopener" aria-label="اسأل على واتساب">
+      <svg class="ui-icon" aria-hidden="true" viewBox="0 0 24 24">
+        <path d="M5.5 18.5 4 22l3.8-1.3A9 9 0 1 0 3 12.7a9.2 9.2 0 0 0 2.5 5.8Z" />
+        <path d="M8.8 8.6c.2 4 2.6 6.4 6.6 6.6l1.2-1.7-2.1-1.2-.9 1c-1.6-.5-2.5-1.4-3-3l1-.9-1.2-2.1-1.6 1.3Z" />
+      </svg>
+      <span>واتساب</span>
+    </a>
+
+    <script src="product-data.js"></script>
+    <script src="product.js"></script>
+  </body>
+</html>
