@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+  <rect width="360" height="300" fill="#f0eee8"/>
+  <rect x="106" y="56" width="148" height="194" rx="22" fill="#fff" stroke="#111111" stroke-width="7"/>
+  <path d="M125 168c48-56 86-56 110 0-24 56-62 56-110 0z" fill="#f5bd3f"/>
+  <circle cx="214" cy="166" r="6" fill="#151515"/>
+  <text x="180" y="104" fill="#111111" font-size="20" font-family="Arial" text-anchor="middle" font-weight="900">OMEGA 3</text>
+</svg>

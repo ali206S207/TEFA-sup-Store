@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title">
+  <title id="title">TEFA GYM supplement products</title>
+  <rect x="70" y="330" width="560" height="76" rx="14" fill="#161616" opacity=".12"/>
+  <g transform="translate(95 80)">
+    <rect x="210" y="28" width="188" height="338" rx="24" fill="#fdfbf5" stroke="#151515" stroke-width="8"/>
+    <rect x="236" y="66" width="136" height="86" rx="12" fill="#f6d51a"/>
+    <text x="304" y="104" fill="#111111" font-size="24" font-family="Arial" text-anchor="middle" font-weight="800">TEFA</text>
+    <text x="304" y="134" fill="#111111" font-size="20" font-family="Arial" text-anchor="middle" font-weight="800">WHEY</text>
+    <rect x="244" y="178" width="120" height="34" rx="17" fill="#151515"/>
+    <text x="304" y="201" fill="#f5bd3f" font-size="18" font-family="Arial" text-anchor="middle" font-weight="800">PROTEIN</text>
+    <path d="M250 260c30-42 74-42 108 0" fill="none" stroke="#c6a500" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(60 178) rotate(-9 120 130)">
+    <rect x="35" y="28" width="170" height="260" rx="24" fill="#151515"/>
+    <rect x="62" y="68" width="116" height="72" rx="12" fill="#f5bd3f"/>
+    <text x="120" y="99" fill="#151515" font-size="22" font-family="Arial" text-anchor="middle" font-weight="900">MASS</text>
+    <text x="120" y="124" fill="#151515" font-size="17" font-family="Arial" text-anchor="middle" font-weight="900">GAINER</text>
+    <circle cx="120" cy="208" r="46" fill="#f6d51a"/>
+    <text x="120" y="216" fill="#111111" font-size="22" font-family="Arial" text-anchor="middle" font-weight="900">5KG</text>
+  </g>
+  <g transform="translate(485 202) rotate(8 95 130)">
+    <rect x="20" y="34" width="150" height="242" rx="22" fill="#111111"/>
+    <rect x="45" y="75" width="100" height="70" rx="10" fill="#fff"/>
+    <text x="95" y="105" fill="#111111" font-size="18" font-family="Arial" text-anchor="middle" font-weight="900">CREATINE</text>
+    <text x="95" y="129" fill="#111111" font-size="15" font-family="Arial" text-anchor="middle" font-weight="900">300G</text>
+    <path d="M55 205h80M70 225h50" stroke="#f5bd3f" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

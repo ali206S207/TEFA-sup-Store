@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+  <rect width="360" height="300" fill="#f0eee8"/>
+  <rect x="98" y="56" width="164" height="192" rx="20" fill="#fff" stroke="#f6d51a" stroke-width="7"/>
+  <circle cx="145" cy="132" r="26" fill="#111111"/>
+  <circle cx="207" cy="132" r="26" fill="#f5bd3f"/>
+  <circle cx="176" cy="188" r="26" fill="#c6a500"/>
+  <text x="180" y="88" fill="#151515" font-size="22" font-family="Arial" text-anchor="middle" font-weight="900">BCAA</text>
+</svg>

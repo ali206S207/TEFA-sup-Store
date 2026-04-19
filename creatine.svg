@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+  <rect width="360" height="300" fill="#f0eee8"/>
+  <rect x="112" y="48" width="136" height="204" rx="22" fill="#111111"/>
+  <rect x="132" y="84" width="96" height="66" rx="10" fill="#fff"/>
+  <text x="180" y="113" fill="#111111" font-size="17" font-family="Arial" text-anchor="middle" font-weight="900">CREATINE</text>
+  <text x="180" y="136" fill="#111111" font-size="15" font-family="Arial" text-anchor="middle" font-weight="900">300G</text>
+  <path d="M138 204h84M154 224h52" stroke="#f5bd3f" stroke-width="12" stroke-linecap="round"/>
+</svg>

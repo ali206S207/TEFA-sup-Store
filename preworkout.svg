@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300">
+  <rect width="360" height="300" fill="#f0eee8"/>
+  <rect x="106" y="52" width="148" height="200" rx="24" fill="#111111"/>
+  <path d="M180 84l-22 58h26l-16 56 42-76h-28l18-38z" fill="#f5bd3f"/>
+  <text x="180" y="224" fill="#f6d51a" font-size="18" font-family="Arial" text-anchor="middle" font-weight="900">PRE RUSH</text>
+</svg>
